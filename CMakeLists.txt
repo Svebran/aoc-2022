@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.21)
 project("Advent of Code 2022" VERSION 1.0 DESCRIPTION "My solutions for Advent of Code 2022" LANGUAGES C)
 set_directory_properties(PROPERTIES C_STANDARD 11 C_EXTENSIONS OFF)
+set(CMAKE_C_FLAGS "-Wall -Wextra -Wpedantic -Wuninitialized -Wundef -Wcast-align -Wstrict-overflow=2 -Wwrite-strings -Wno-format-nonliteral")
 add_executable(1a src/1a.c)
 add_executable(1b src/1b.c)
 add_executable(2a src/2a.c)
